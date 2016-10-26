@@ -1,0 +1,9 @@
+
+body{
+    background-image: url(../image/seacaptain.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+    color: black;
+    font-family: sans-serif;
+}
