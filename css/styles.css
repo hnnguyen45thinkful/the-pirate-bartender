@@ -2,8 +2,22 @@
 body{
     background-image: url(../image/seacaptain.jpg);
     background-repeat: no-repeat;
+    background-color: blue;
     background-attachment: fixed;
     background-position: center bottom;
     color: black;
     font-family: sans-serif;
+}
+
+.title, .questionContainer, .drinkContainer{
+    text-align: center;
+}
+
+.mainTitle{
+    font-size: 40px;
+    margin-top: 120px;
+}
+
+.subTitle{
+    font-size: 30px;
 }
