@@ -4,7 +4,7 @@ var Bartender= function(pirate){
 }
 //Creating the global variables for the starting (state) and questions and also the ingredients.
 var state= {
-	currentQuestionIndex:0 ,
+	currentQuestionIndex: 0,
 	userPreferences: []
 }
 //Creating each questions in the array.
@@ -36,3 +36,8 @@ var cocktailNames = {
 		return cocktailNames.nouns[Math.floor(Math.random()*cocktailNames.nouns.length)]
 	},
 }
+//Creating a pantry objects array with all the ingredients from strong to fruity look above for more.
+var pantryIngredients = [strongIngredients, saltyIngredients, bitterIngredients, sweetIngredients, fruityIngredients];
+
+// Creating the object create for the bartender object from the pirate function from above var Bartender= function(pirate){ this.pirate = pirate
+var pirateBartender= Object.create(Bartender.prototype)
