@@ -41,3 +41,21 @@ var pantryIngredients = [strongIngredients, saltyIngredients, bitterIngredients,
 
 // Creating the object create for the bartender object from the pirate function from above var Bartender= function(pirate){ this.pirate = pirate
 var pirateBartender= Object.create(Bartender.prototype)
+
+//Now I need to create bartender functions which shows all the methods shared and shows the ingredients from the user's preferences randomly. From there, creates a drink with a cool nickname.
+Bartender.prototype.createDrink= function(state){
+	if (state.userPreferences.length===0) return ["No ingredients for you, I am SOBER!!!"]
+	var drink = state.userPreferences.map(function(index){
+		var ingredientCategory = pantryIngredients[index] // ["slice of orange", "dash of cassis", "cherry on top"]
+		return ingredientCategory[Math.floor(Math.random()*ingredientCategory.length)]
+	})
+	return drink
+}
+// Creating a cocktail name with adjectives and nouns and combining it into a name display in red.
+var cocktailNameCreator = function(){
+	return cocktailNames.getRandomAdjective() + " " + cocktailNames.getRandomNoun();
+}
+// Creating a question that displays what the user's preferences with array of questions one at a time and then from above will give it a cool nickname or name in the preferences.
+var currentQuestion = function(state){
+	return arrayQuestions[state.currentQuestionIndex];
+}
