@@ -1,0 +1,78 @@
+/*Created and modified by Hieu Nguyen*/
+body{
+    background-image: url(../image/seacaptain.jpg);
+    background-repeat: repeat-x;
+    background-color: blue;
+    background-attachment: fixed;
+    background-position: center bottom;
+    color: black;
+    font-family: sans-serif;
+}
+
+.title, .questionContainer, .drinkContainer{
+    text-align: center;
+}
+
+.mainTitle{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.subTitle{
+    text-align: center;
+    font-size: 25px;
+}
+
+.drinkContainer{
+    display: none;
+    width:200px;
+}
+
+.yesBtn, .noBtn{
+    border-color: black;
+    border-radius: 5px;
+    font-size: 25px;
+    display: inline-block;
+    height: 50px;
+    width: 165px;
+    color: black;
+    font-weight: bolder;
+    background-color: grey;
+}
+
+.otherDrinkBtn{
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 20px;
+    color: black;
+    font-weight: bolder;
+    margin-left: 5%;
+    background-color: grey;
+}
+
+.drinkIngredients{
+    font-size: 25px;
+    font-style: bolder;
+    text-align: left;
+}
+
+.drinkContainer{
+    display: none;
+    border-style: solid;
+    border-color: black;
+    font-size: 14px;
+    background-color: white;
+    font-weight: bolder;
+    width: 50%;
+    margin: auto;
+    height: 400px;
+}
+
+.drinkName h2{
+    font-size: 30px;
+    color: red;
+    font-style: bolder;
+}
