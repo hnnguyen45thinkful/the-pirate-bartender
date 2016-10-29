@@ -1,4 +1,4 @@
-
+/*Created and modified by Hieu Nguyen*/
 body{
     background-image: url(../image/seacaptain.jpg);
     background-repeat: repeat-x;
@@ -30,21 +30,23 @@ body{
 }
 
 .yesBtn, .noBtn{
-    border-radius: 6px;
+    border-color: black;
+    border-radius: 5px;
     font-size: 25px;
     display: inline-block;
     height: 50px;
     width: 165px;
-    color: white;
+    color: black;
+    font-weight: bolder;
     background-color: grey;
 }
 
 .otherDrinkBtn{
     display: inline-block;
-    width: 150px;
-    height: 70px;
-    font-size: 20px;
-    border-radius: 5px;
+    width: 140px;
+    height: 80px;
+    font-size: 18px;
+    border-radius: 20px;
     color: black;
     font-weight: bolder;
     margin-left: 5%;
@@ -53,15 +55,20 @@ body{
 
 .drinkIngredients{
     font-size: 25px;
+    font-style: bolder;
+    text-align: left;
 }
 
 .drinkContainer{
     display: none;
+    border-style: solid;
+    border-color: black;
     font-size: 14px;
     background-color: white;
-    width: 40%;
+    font-weight: bolder;
+    width: 50%;
     margin: auto;
-    height: 360px;
+    height: 400px;
 }
 
 .drinkName h2{
